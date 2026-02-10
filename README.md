@@ -34,3 +34,16 @@ Key Learnings:
 - Managing databases with JPA
 - Debugging real-world issues such as port conflicts and compilation errors
 - Integrating third-party APIs into backend systems
+
+
+**API USAGE**
+After starting all three services, you can access the application using the following endpoint.
+
+Prerequisites:  Ensure all services are running:
+- User Service → http://localhost:8080
+- Weather Service → http://localhost:8081
+- Notification Service → http://localhost:8082
+
+Example Request
+To fetch weather information for a user and trigger alerts if conditions are met:
+GET http://localhost:8080/users/1/weather
